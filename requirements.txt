@@ -1,0 +1,14 @@
+# ORM
+psycopg2-binary
+SQLAlchemy
+
+# SCHEMA
+pydantic
+pydantic-settings
+
+# MODULES
+pytz
+grpcio
+grpcio-tools
+cryptography
+python-decouple

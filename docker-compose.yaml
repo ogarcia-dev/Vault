@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    vault:
+        build: .
+        image: vault_image
+        container_name: vault_container
+        command: python3 -u main.py
+
+        ports:
+            - 50051:50051
+
+        env_file:
+            - .env
+
+        volumes:
+            - ./src:/cephalopodus/vault

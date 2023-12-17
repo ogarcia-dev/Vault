@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+message EncryptKeysRequest {
+  string system_code = 1;
+}
+
+message EncryptKeysResponse {
+  string encrypted_data = 1;
+}
+
+service KeysPairsService {
+  rpc keysPairs(EncryptKeysRequest) returns (EncryptKeysResponse);
+}
